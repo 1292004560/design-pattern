@@ -11,7 +11,6 @@ public class Singleton {
     //即懒汉式
     public static Singleton getInstance() {
         if (instance == null) {
-
             synchronized (Singleton.class) {
                 instance = new Singleton();
             }
